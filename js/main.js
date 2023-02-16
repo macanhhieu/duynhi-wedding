@@ -336,9 +336,9 @@ $(".qr-zoom").magnificPopup({
               countdown = document.getElementById("countdown"),
               content = document.getElementById("content");
 
-          headline.innerText = "It's our wedding!";
-          countdown.style.display = "none";
-          content.style.display = "block";
+          //headline.innerText = "It's our wedding!";
+          //countdown.style.display = "none";
+          //content.style.display = "block";
 
           clearInterval(x);
         }
