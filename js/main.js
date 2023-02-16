@@ -203,21 +203,36 @@
     // Gallery 
 
     var imagesWedding = "";
-    for (var i = 3; i <= 36; i++) {
-        
-        imagesWedding += '<div class="col-md-4 gallery-item ceremony">\n' +
+	var count = 5;
+	var count_max = 36;
+	var i =3;
+	while(i < 37){
+		
+		 
+			imagesWedding += '<div class="col-md-4 gallery-item ceremony">\n' +
             '                            <a href="images/gallery/'+i+'.jpg" class="img-zoom">\n' +
             '                                <div class="gallery-box">\n' +
-            '                                    <div class="gallery-img"> <img src="images/gallery/'+i+'.jpg" class="img-fluid mx-auto d-block" alt=""> </div>\n' +
+            '                                    <div class="gallery-img"> <img  src="images/gallery/'+i+'.jpg" class=" img-fluid mx-auto d-block" alt=""> </div>\n' +
             '                                    <div class="gallery-detail">\n' +
-            '                                        <h4 class="mb-0">Lê Thảo & Minh Hiếu</h4>\n' +
+            '                                        <h4 class="mb-0">Nhi Phan & Duy Phạm</h4>\n' +
             '                                    </div>\n' +
             '                                </div>\n' +
             '                            </a>\n' +
             '                        </div>'
+		
+		
+			
+		
+		i += 1;
+	}
+    
+	
+	function myGreeting() {
+		console.log('count',count);
+	  count += 5;
+	}
 
-           
-    }
+
     $("#images-gallery").html(imagesWedding);
 
     $(window).on("load", function () {
@@ -304,7 +319,7 @@ $(".qr-zoom").magnificPopup({
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-  let birthday = "Jan 1, 2023 10:00:00",
+  let birthday = "Mar 12, 2023 11:00:00",
       countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
         let now = new Date().getTime(),

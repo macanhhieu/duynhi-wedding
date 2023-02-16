@@ -769,6 +769,7 @@ input[type=radio]:checked:before {
     right: 0;
     left: 0;
     text-align: center;
+	padding: 10px;
 }
 
 #oliven-aside .footer1 p {
@@ -778,7 +779,7 @@ input[type=radio]:checked:before {
 }
 
 #oliven-aside .footer1 img {
-    width: 75px;
+    
 }
 
 #oliven-aside .footer1 a {
@@ -1869,11 +1870,16 @@ body.offcanvas .oliven-nav-toggle {
 /* ===== Footer style ===== */
 
 .footer2 {
-    padding: 90px 30px;
+   
     background: #faf8f7;
 }
 
 .footer2 img {
+  
+    margin-bottom: 10px;
+}
+
+.footer2 .img {
     width: 90px;
     margin-bottom: 10px;
 }
@@ -1927,7 +1933,7 @@ body.offcanvas .oliven-nav-toggle {
 
 @media screen and (max-width: 768px) {
     .footer2 {
-        padding: 100px 30px 80px 30px;
+        
         text-align: center;
     }
 }
